@@ -1,0 +1,25 @@
+#map{
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #f6f6f4;
+}
+
+.marker {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.boton-regresar{
+    position: fixed;
+    top: 40px;
+    left: 12px;
+    font-size: 23px !important;
+}
+
+.size{
+    width: 40px;
+    height: 40px;
+}
