@@ -3,7 +3,7 @@
     <ion-content>
       <div class="menu-header-bg"></div>
       <div class="header-content">
-      <img src="/assets/header/logotipo1.svg" >
+      <img src="/assets/header/logovivet.png" >
     </div>
        <ion-list>
          <ion-menu-toggle>
@@ -34,7 +34,7 @@
           <ion-buttons (click)="histagram()">
             <ion-icon class="icon" color="location" name="logo-instagram"></ion-icon>
           </ion-buttons>  
-           <ion-buttons href="whatsapp//send?phone=593988560221">
+           <ion-buttons (click)="openwhat(+593988560221, '_self')">
             <ion-icon class="icon" color="whatsapp" name="logo-whatsapp"></ion-icon>        
           </ion-buttons>
           </ion-item>

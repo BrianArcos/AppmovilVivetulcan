@@ -45,9 +45,9 @@ export class DetalleEstablecimientoPage implements OnInit {
   }
 
   openWeb(lista:string, target:string){
-    const link = lista
-    this.navegador.create(link, target)
-    // this.navegador.create('https://www.google.com','_self')
+  // const link = lista
+    this.navegador.create(lista, target)
+     //this.navegador.create('https://www.google.com','_self')
   }
 
   openFb(lista:string, target:string){
@@ -55,6 +55,9 @@ export class DetalleEstablecimientoPage implements OnInit {
     this.navegador.create(id, target)
   }
 
+  openwhat(lista:string):void{
+    window.open('https://api.whatsapp.com/send?phone='+lista, '_system');
+  }
 
   calln(lista:string){
     this.call.callNumber (lista, true)

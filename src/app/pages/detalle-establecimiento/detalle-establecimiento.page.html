@@ -34,15 +34,16 @@
       <ion-icon color="facebook" class="fb" name="logo-facebook" ></ion-icon>   
     </ion-segment-button>
 
-    <ion-segment-button >
-      <a href="https://api.whatsapp.com/send?phone=${{lista.telef_celular}}"></a>
+    <ion-segment-button (click)="openwhat(lista.telef_celular, '_system')">
+      <!-- <a href="https://api.whatsapp.com/send?phone=${{lista.telef_celular}}"></a> -->
       <!-- <a href="https://wa.me/{{lista.telef_celular}}?text=Hello%20How%20are%20you"></a> -->
     <!-- https://api.whatsapp/send?phone=+{{lista.telef_celular}}?text=Hola%20Mundo)"  -->
+      
       <ion-label class="text">WhatsApp</ion-label>
       <ion-icon color="whatsapp" class="what" name="logo-whatsapp"></ion-icon>
     </ion-segment-button>
 
-    <ion-segment-button  (click)="openWeb(lista.pagina_web,'_system')">
+    <ion-segment-button  (click)="openWeb(lista.pagina_web,'_self')">
       <ion-label class="text">Sitio Web</ion-label>
       <ion-icon color="web" class="Web" name="globe"></ion-icon> 
       

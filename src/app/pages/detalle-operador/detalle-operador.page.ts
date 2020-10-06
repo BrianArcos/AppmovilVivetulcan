@@ -38,6 +38,11 @@ export class DetalleOperadorPage implements OnInit {
 
   }
 
+  openwhat(lista:string):void{
+    window.open('https://api.whatsapp.com/send?phone='+lista, '_system');
+  }
+
+
   calln(listaopera:string){
     this.call.callNumber (listaopera, true)
   .then(res => console.log('Launched dialer!', res))

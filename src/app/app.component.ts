@@ -22,7 +22,7 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
+      this.statusBar.styleLightContent ();
       this.splashScreen.hide();
 
       this.checkDarkTheme();
@@ -41,4 +41,9 @@ export class AppComponent {
   histagram(){
     this.web.create(`https://www.instagram.com/vive_tulcan/?hl=es-la`,`_system`);
   }
+
+  openwhat(lista:string):void{
+    window.open('https://api.whatsapp.com/send?phone='+593988560221, '_system');
+  }
+
 }

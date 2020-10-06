@@ -22,10 +22,10 @@
           <ion-icon color="facebook" class="fb" name="logo-facebook" ></ion-icon>   
         </ion-segment-button>
     
-        <ion-segment-button href="https://wa.me/${593999229501}?text=Hola%20Mundo">
+        <ion-segment-button (click)="openwhat(listaopera.telef_celular, '_system')">
           <ion-label class="text">WhatsApp</ion-label>
           <ion-icon color="whatsapp" class="what" name="logo-whatsapp"></ion-icon>
-        </ion-segment-button>
+        </ion-segment-button> 
     
         <ion-segment-button  (click)="openWeb(listaopera.pagina_web,'_system')">
           <ion-label class="text">Sitio Web</ion-label>
