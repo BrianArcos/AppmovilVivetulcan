@@ -38,8 +38,8 @@ export class DetalleOperadorPage implements OnInit {
 
   }
 
-  openwhat(lista:string):void{
-    window.open('https://api.whatsapp.com/send?phone='+lista, '_system');
+  openwhat(listaopera:string):void{
+    window.open('https://api.whatsapp.com/send?phone='+listaopera, '_system');
   }
 
 

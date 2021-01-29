@@ -155,8 +155,8 @@ let DetalleOperadorPage = class DetalleOperadorPage {
         const id = listaopera;
         this.navegador.create(id, target);
     }
-    openwhat(lista) {
-        window.open('https://api.whatsapp.com/send?phone=' + lista, '_system');
+    openwhat(listaopera) {
+        window.open('https://api.whatsapp.com/send?phone=' + listaopera, '_system');
     }
     calln(listaopera) {
         this.call.callNumber(listaopera, true)

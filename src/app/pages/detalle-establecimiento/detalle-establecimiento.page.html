@@ -7,11 +7,12 @@
    
   <ion-col  >
   <ion-card class="card">
-  <!-- <ion-label>
-    <img class="portada" src={{lista.foto_portada}}>  
-  </ion-label> -->
   
-  <ion-slides pager="true" [options]="slideOpts" >
+  <ion-label *ngIf="listadoImagenes.length ==0">
+    <img class="portada" src={{lista.foto_portada}}>  
+  </ion-label>
+  
+  <ion-slides pager="true" [options]="slideOpts" *ngIf="listadoImagenes">
     <ion-slide *ngFor="let item of listadoImagenes">
       <ion-img src="{{ item.url }}"></ion-img>
     </ion-slide>   

@@ -283,8 +283,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }, {
         key: "openwhat",
-        value: function openwhat(lista) {
-          window.open('https://api.whatsapp.com/send?phone=' + lista, '_system');
+        value: function openwhat(listaopera) {
+          window.open('https://api.whatsapp.com/send?phone=' + listaopera, '_system');
         }
       }, {
         key: "calln",

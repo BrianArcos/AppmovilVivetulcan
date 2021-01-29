@@ -1,6 +1,7 @@
 import { Component, OnInit,  } from '@angular/core';
 
 import { NavController,   } from '@ionic/angular';
+import { CallNumber } from '@ionic-native/call-number/ngx';
 
 
 
@@ -83,13 +84,14 @@ slides: { img: string, img1: string, titulo: string, subt: string, id:string }[]
 
   
 
-  constructor( private navCtrl :NavController ) {
+  constructor( private navCtrl :NavController,
+              private call:CallNumber ) {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
     this.darkMode = prefersDark.matches;
    }
 
   ngOnInit() {
-    
+
   }
   cambio(){
     // const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
@@ -101,6 +103,12 @@ slides: { img: string, img1: string, titulo: string, subt: string, id:string }[]
 
   dirigir(id:string){
     this.navCtrl.navigateForward(id);
+  }
+
+  call911(){
+    this.call.callNumber("911", true)
+    .then(res => console.log('Launched dialer!', res))
+    .catch(err => console.log('Error launching dialer', err));
   }
 
 }
